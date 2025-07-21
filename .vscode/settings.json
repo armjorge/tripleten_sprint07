@@ -1,0 +1,15 @@
+{
+  // 1) Define a new PS profile that auto-activates your venv:
+  "terminal.integrated.profiles.windows": {
+    "PowerShell (venv)": {
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoExit",
+        "-Command",
+        "& 'C:\\Users\\arman\\Documents\\venv\\Scripts\\Activate.ps1'"
+      ]
+    }
+  },
+  // 2) Make that the default for *all* new terminals:
+  "terminal.integrated.defaultProfile.windows": "PowerShell (venv)"
+}
